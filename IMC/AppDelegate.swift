@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  IMC
 //
-//  Created by Eder  Barreto on 09/12/20.
+//  Created by Eder Barreto on 09/12/20.
 //  Copyright © 2020 Eder Barreto. All rights reserved.
 //
 
