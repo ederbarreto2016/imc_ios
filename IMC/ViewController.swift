@@ -28,18 +28,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
     
-    @IBAction func calculate(sender: AnyObject) {
+    
+    @IBAction func calculate(_ sender: Any) {
         if let weight = Double(tfWeight.text!), let height = Double(tfHeight.text!){
             imc = weight / (height * height)
             showResults()
         }
-    }
-   
+    }   
     
     func showResults(){
         var result: String = ""
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         
         lbResult.text = "\(Int(imc)): \(result)"
         ivResult.image = UIImage(named: image)
-        viResult.hidden = false
+        viResult.isHidden = false
         view.endEditing(true)
     }
 
